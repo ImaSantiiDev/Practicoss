@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+    }
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    .contenedor-foto {
+        height: 250px;
+    }
+}

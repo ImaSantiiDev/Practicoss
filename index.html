@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Biblioteca Virtual</title>
-    <!--Bootstrap-->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="dist/CSS/style.css">
     <link rel="stylesheet" href="dist/CSS/movil.css">
@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dist/paginas/contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -33,6 +33,98 @@
             <a href="#catalogo" class="btn btn-primary btn-lg mt-3">Ver Catálogo</a>
         </div>
     </header>
+
+    <section id="catalogo" class="seccion-catalogo py-5">
+        <div class="container">
+            <h2 class="titulo-seccion text-center mb-4">Destacados <span>de la semana</span></h2>
+            
+            <div class="text-center mb-5" id="filtros">
+                <button class="btn btn-filtro active" data-filtro="todos">Todos</button>
+                <button class="btn btn-filtro" data-filtro="infantil">Infantil</button>
+                <button class="btn btn-filtro" data-filtro="adultos">Adultos</button>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4 tarjeta-col" data-genero="infantil">
+                    <div class="tarjeta-libro">
+                        <div class="contenedor-foto">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_796748-MLA84578398119_052025-O.webp" alt="El Principito">
+                        </div>
+                        <div class="info-libro">
+                            <h3>El Principito</h3>
+                            <p>Infantil</p>
+                            <button class="btn-leer">Leer Ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 tarjeta-col" data-genero="infantil">
+                    <div class="tarjeta-libro">
+                        <div class="contenedor-foto">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_924418-MLA79664655017_092024-O.webp" alt="Pinocho">
+                        </div>
+                        <div class="info-libro">
+                            <h3>Pinocho</h3>
+                            <p>Infantil</p>
+                            <button class="btn-leer">Leer Ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 tarjeta-col" data-genero="adultos">
+                    <div class="tarjeta-libro">
+                        <div class="contenedor-foto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvU-pNZ6dUr6kqdk9u2vV85u4k5wOKkXZfairXNs7u8A&s=10" alt="Padre rico Padre pobre">
+                        </div>
+                        <div class="info-libro">
+                            <h3>Padre rico Padre pobre</h3>
+                            <p>Finanzas</p>
+                            <button class="btn-leer">Leer Ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 tarjeta-col" data-genero="adultos">
+                    <div class="tarjeta-libro">
+                        <div class="contenedor-foto">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp_vu9zXRCDMiWx8OIzwaerH97vyL0QnXjPF_64_MHaMfcJHoKg52Zswf&s=10" alt="Cien años de soledad">
+                        </div>
+                        <div class="info-libro">
+                            <h3>Cien años de soledad</h3>
+                            <p>Novela</p>
+                            <button class="btn-leer">Leer Ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 tarjeta-col" data-genero="adultos">
+                    <div class="tarjeta-libro">
+                        <div class="contenedor-foto">
+                            <img src="https://m.media-amazon.com/images/I/71hf29TU8LL._AC_UF894,1000_QL80_.jpg" alt="El Señor de los Anillos">
+                        </div>
+                        <div class="info-libro">
+                            <h3>El Señor de los Anillos</h3>
+                            <p>Fantasía</p>
+                            <button class="btn-leer">Leer Ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 tarjeta-col" data-genero="adultos">
+                    <div class="tarjeta-libro">
+                        <div class="contenedor-foto">
+                            <img src="https://m.media-amazon.com/images/I/61kjuGfZyML._AC_UF1000,1000_QL80_.jpg" alt="1984">
+                        </div>
+                        <div class="info-libro">
+                            <h3>1984</h3>
+                            <p>Ciencia Ficción</p>
+                            <button class="btn-leer">Leer Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
